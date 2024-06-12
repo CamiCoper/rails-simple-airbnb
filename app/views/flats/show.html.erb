@@ -1,0 +1,9 @@
+<!-- app/views/flats/show.html.erb -->
+<h1><%= @flat.name %></h1>
+<p><%= @flat.description %></p>
+<p><%= @flat.address %></p>
+<p><%= @flat.price_per_night %> per night</p>
+<p><%= @flat.number_of_guests %> guests</p>
+
+<%= link_to 'Edit', edit_flat_path(@flat), class: "btn btn-secondary" %>
+<%= link_to 'Back to flats', flats_path, class: "btn btn-secondary" %>
